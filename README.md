@@ -1,5 +1,4 @@
-# AiSOC_Project_Template
-# AISOC 025
+# AISOC 2025
 
 ## ⚙️ Guidelines
 
