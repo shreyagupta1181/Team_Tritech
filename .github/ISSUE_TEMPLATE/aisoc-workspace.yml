@@ -1,0 +1,94 @@
+name: AISOC Internship Workspace
+description: Use this template to submit a project proposal for the AISOC internship program.
+title: "AISOC Workspace: <Project Title>"
+labels: ["aisoc", "proposal"]
+assignees: []
+
+body:
+  - type: input
+    id: project_title
+    attributes:
+      label: 🧠 Project Title
+      description: Briefly describe the title of your project
+      placeholder: e.g. AI-powered Slack FAQ Bot
+    validations:
+      required: true
+
+  - type: textarea
+    id: team_details
+    attributes:
+      label: 👥 Team Details
+      description: Provide the team name, member names, and email addresses
+      placeholder: |
+        - Team Name: The Innovators
+        - Member 1: Alice Smith (alice@email.com)
+        - Member 2: Bob Johnson (bob@email.com)
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem_statement
+    attributes:
+      label: 🧩 Problem Statement
+      description: Briefly describe the problem your project aims to solve
+      placeholder: Describe the issue or opportunity you're addressing.
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: 🚀 Motivation
+      description: Explain the motivation or background behind choosing this project
+      placeholder: What inspired your team to work on this project?
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_outcome
+    attributes:
+      label: 🎯 Expected Outcome
+      description: List the expected outcomes from the project as bullet points
+      placeholder: |
+        - Functional AI chatbot interface
+        - API integration with knowledge base
+        - Documentation and user guide
+    validations:
+      required: true
+
+  - type: textarea
+    id: timeline
+    attributes:
+      label: 📅 Timeline & Milestones
+      description: Provide a timeline with measurable milestones (e.g. weekly)
+      placeholder: |
+        - Week 1–2: Requirement gathering and architecture design
+        - Week 3–4: Initial development and testing
+        - Week 5–6: Feature finalization and integration
+        - Week 7–8: Final testing and documentation
+    validations:
+      required: true
+
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: 📦 Final Deliverables
+      description: Describe the expected final deliverables at the end of the program
+      placeholder: |
+        - Working demo hosted on a public link
+        - Codebase with proper documentation
+        - Presentation explaining the solution
+    validations:
+      required: true
+
+  - type: textarea
+    id: appendix
+    attributes:
+      label: 📎 Appendix (Optional)
+      description: Add any extra information, links, or references
+      placeholder: |
+        - GitHub repository link
+        - Reference documents or datasets
+        - Related prior work
+    validations:
+      required: false
