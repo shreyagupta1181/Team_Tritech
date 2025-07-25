@@ -279,10 +279,12 @@ def get_job_status(job_id):
 
 @app.route('/api/output/<filename>', methods=['GET'])
 def get_output(filename):
-    try:
-        return send_from_directory(OUTPUT_FOLDER, filename)
-    except FileNotFoundError:
+    file_path = os.path.join(OUTPUT_FOLDER, filename)
+    
+    if not os.path.exists(file_path):
         return jsonify({'error': 'File not found'}), 404
+
+    return send_from_directory(OUTPUT_FOLDER, filename, as_attachment=True)
 
 @app.route('/api/download-csv/<job_id>', methods=['GET'])
 def download_csv(job_id):
@@ -322,6 +324,7 @@ def download_csv(job_id):
             'Content-Disposition': f'attachment; filename={result["filename"]}_results.csv'
         }
     )
+
 
 @app.route('/api/csv-json', methods=['GET'])
 def csv_as_json():

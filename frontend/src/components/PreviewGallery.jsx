@@ -12,7 +12,8 @@ const PreviewGallery = ({ files, onRemove }) => {
           if (typeof fileName !== 'string') return null;
           const isVideo = fileName.match(/\.(mp4|avi|mov|mkv)$/i);
           const isImage = fileName.match(/\.(jpg|jpeg|png)$/i);
-          const fileURL = `/api/output/${fileName}`;
+          const backendUrl = 'http://localhost:5000'; 
+          const fileURL = `${backendUrl}/api/output/${fileName}`;
 
           return (
             <div key={idx} className="preview-card">
