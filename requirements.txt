@@ -1,0 +1,9 @@
+ultralytics==8.3.144
+paddleocr==2.10.0
+paddlepaddle==3.0.0
+opencv-python
+numpy
+Pillow
+flask
+werkzeug
+
