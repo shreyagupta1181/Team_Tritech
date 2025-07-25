@@ -1,0 +1,51 @@
+.preview-gallery {
+  padding: 1.5rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.preview-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.preview-card:hover {
+  transform: translateY(-3px);
+}
+
+.preview-card video,
+.preview-card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+}
+
+.file-name {
+  font-size: 0.9rem;
+  font-weight: bold;
+  word-break: break-all;
+}
+
+.download-btn {
+  margin-top: 0.5rem;
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+
+.download-btn:hover {
+  background: #0056b3;
+}

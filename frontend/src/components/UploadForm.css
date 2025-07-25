@@ -1,0 +1,42 @@
+.upload-form {
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.upload-form input[type="file"],
+.upload-form input[type="text"] {
+  display: block;
+  margin: 0.5rem auto 1rem;
+  padding: 0.5rem;
+  width: 80%;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  background: white;
+}
+
+.upload-form button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.upload-status {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.status.done {
+  color: green;
+}
+
+.status.error {
+  color: red;
+}
+
+.status.pending {
+  color: goldenrod;
+}

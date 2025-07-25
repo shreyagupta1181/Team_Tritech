@@ -1,0 +1,15 @@
+.theme-toggle {
+  font-size: 0.9rem;
+  padding: 0.4rem 0.8rem;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: auto;
+  transition: background 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background-color: #444;
+}
