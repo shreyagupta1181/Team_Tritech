@@ -114,7 +114,7 @@ def process_file_async(job_id, input_path, filename):
             ['python', 'main.py'],
             capture_output=True,
             text=True,
-            timeout=600,
+            timeout=6000,
             env=env
         )
         logger.info(f"[JOB {job_id}] main.py finished with return code {result.returncode}")
